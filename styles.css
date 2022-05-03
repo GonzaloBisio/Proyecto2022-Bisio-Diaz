@@ -1,12 +1,16 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
+body{
+	height: 900px;
+	position: relative;
+	padding-bottom: 3em;
+	min-height: 100vh;
+	background-color: #1c0a50;
+}
 header {
-	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
 	text-align: center;
 	width: 100%;
-	height: auto;
+	height: 35vh;
 	background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 	overflow: hidden;
 	border-radius: 0 0 75% 75% / 20%;
@@ -22,9 +26,11 @@ header .overlay{
 }
 h1.title{
     text-align: left;
+	color: rgb(18, 255, 69);
 }
 h3.subt{
     text-align: left;
+	color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -47,14 +53,19 @@ h3, p {
 button {
 	border: none;
 	outline: none;
-	padding: 15px 45
-	px;
+	padding: 15px 45px;
 	border-radius: 50px;
 	color: #333;
-	background: rgb(24, 200, 15);
+	background: linear-gradient(235deg,#055c1b,#2bca07,#064603);
 	margin-bottom: 50px;
 	box-shadow: 0 10px 50px 0 #0000003b;
 }
+.container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+  }
 button:hover{
     animation: pulsate 0.5s
     ease-in-out;
@@ -68,11 +79,55 @@ button:hover{
         0 0 100px #1c0a50;
     }
 }
-.grad {
-    background-image: linear-gradient(500deg, rgb(101, 180, 229), rgb(193, 211, 240));
-  }
+
 p.start {
     color: black;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+h3.f{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+@media (max-width:500px) {
+	.footer-menu ul{
+	  display: flex;
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+	}
 }
