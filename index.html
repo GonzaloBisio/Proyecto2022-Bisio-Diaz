@@ -6,16 +6,32 @@
 </head>
 <body>
     <header>
-        <title>Xero Draw</title>
+        <title>Draw by Memorie</title>
         <div class="overlay">
-        <h1 class="title">Xero's drawings</h1>
+        <h1 class="title">Draw by Memorie</h1>
         <h3 class="subt">Welcome to the best page ever</h3>
         <br>
     </header>
-
+    <div class="container">
+        <p>An image will appear on the right once you click the button, be ready to draw!</p>
+    </div>
     <div class="container">
         <button class="center"><img src="img/favicon.ico" width="40px" height="40px"/></button>
     </div>
+    <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+          <button onClick="undo_line()" type="button" class="button">Undo</button>
+          <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+        </div>
+        <div class="tools">
+          <div onClick="change_color(this)" class="color-field" style="background:  red;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  blue;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  black;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background:  white;"></div>
+          <input onInput="draw_color = this.value" type="color" class="color-picker">
+          <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
+        </div>
     <footer>
         <div class="footer-content">
             <h3 class="f">Proyecto Laboratorio de Computación II UCC</h3>

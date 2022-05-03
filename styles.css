@@ -3,7 +3,7 @@ body{
 	height: 900px;
 	position: relative;
 	padding-bottom: 3em;
-	min-height: 100vh;
+	min-height: 190vh;
 	background-color: #1c0a50;
 }
 header {
@@ -25,11 +25,9 @@ header .overlay{
 	
 }
 h1.title{
-    text-align: left;
 	color: rgb(18, 255, 69);
 }
 h3.subt{
-    text-align: left;
 	color: rgb(255, 255, 255);
 }
 
@@ -75,8 +73,8 @@ button:hover{
 @keyframes pulsate {
     0%{
         box-shadow: 
-        0 0 50px #00c9e4,
-        0 0 100px #1c0a50;
+        0 0 5px #00c9e4,
+        0 0 6px #1c0a50;
     }
 }
 
@@ -131,3 +129,54 @@ h3.f{
 	  margin-bottom: 20px;
 	}
 }
+canvas {
+	box-shadow: -3px 2px 9px 6px black;
+	cursor: pointer;
+	margin-left: 30px;
+	width: 40%;
+	height: 60vh;
+	background-color: #cacdd2;
+  }
+  .tools {
+	display: flex;
+	margin-top: 15px;
+	justify-content:left;
+	margin-left: 30px;
+	flex-direction: row;
+  }
+  
+  .tools .color-field {
+	height: 40px;
+	width: 40px;
+	min-height: 40px;
+	min-width: 40px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid white;
+	align-self: center;
+	margin: 0 10px;
+  }
+  
+  .tools .button {
+	align-self: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid white;
+	cursor: pointer;
+	color: white;
+	background: #222;
+	font-weight: bold;
+	margin: 0 10px;
+  }
+  
+  .color-picker {
+	align-self: center;
+	margin: 0 10px;
+	height: 50px;
+  }
+  
+  .pen-range {
+	align-self: center;
+	margin: 0 10px;
+  }
